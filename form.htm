@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr">
+  <head>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui"
+    />
+    <meta name="description" content="Cars" />
+    <meta name="keywords" content="Cars" />
+    <meta name="author" content="Cars" />
+    <title>Cars</title>
+    <!-- <script src="myFunctions.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <!-- <meta charset="UTF-8" /> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="div">
+      <div class="background-one">
+        <div class="link-container">
+          <a class="link-one" href="#">home.html</a>
+        </div>
+      </div>
+      <div class="background-two link-container">
+        <a class="link-two" href="Cars.html">Cars.html</a>
+      </div>
+      <div class="background-three link-container">
+        <a class="link-three" href="aboutus.html">aboutus.html</a>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__container">
+        <div class="modal__featured">
+          <div class="modal__circle"></div>
+          <img src="./images/logo.png" class="modal__product" />
+        </div>
+        <div class="modal__content">
+          <h2>Your payment details</h2>
+
+          <form>
+            <ul class="form-list">
+              <li class="form-list__row">
+                <label>Name</label>
+                <input type="text" name="" required="" />
+              </li>
+              <li class="form-list__row">
+                <label>serial number</label>
+                <input
+                  type="number"
+                  name=""
+                  required=""
+                  min="0"
+                  maxlength="11"
+                />
+              </li>
+              <li class="form-list__row">
+                <label>Birth date</label>
+                <input type="date" name="" required="" />
+              </li>
+              <!-- <li class="form-list__row">
+                <label>Card Number</label>
+                <div id="input--cc" class="creditcard-icon">
+                  <input type="text" name="cc_number" required="" />
+                </div>
+              </li> -->
+
+              <li class="form-list__row">
+                <label>mobile number</label>
+                <input type="number" name="" required="" min="0" />
+              </li>
+              <li class="form-list__row">
+                <label>ُEmail</label>
+                <input type="email" name="" required="" />
+              </li>
+              <li class="form-list__row form-list__row--inline">
+                <div>
+                  <label>Reservation period </label>
+                  <div class="form-list__input-inline">
+                    <select id="LastRenovationDate" name="LastRenovationDate">
+                      <option value="">Reservation the daily</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                      <option value="31">31</option>
+                    </select>
+                    <select id="LastRenovationDate" name="LastRenovationDate">
+                      <option value="">Reservation week</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                    <select id="LastRenovationDate" name="LastRenovationDate">
+                      <option value="">Reservation annual</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="form-list__row">
+                <div class="containerr">
+                  <header>Captcha Generator</header>
+                  <div class="input_field captch_box">
+                    <input type="text" value="" disabled />
+                    <button class="refresh_button">
+                      <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                  </div>
+                  <div class="input_field captch_input">
+                    <input type="text" placeholder="Enter captcha" />
+                  </div>
+                  <div class="message">Entered captcha is correct</div>
+                  <div class="button">
+                    <button>Submit Captcha</button>
+                  </div>
+                </div>
+                <script src="./myFunctions.js"></script>
+              </li>
+              <li>
+                <button type="submit" class="button">Pay Now</button>
+
+                <button onclick="myFunction()">Try it</button>
+
+                <p id="demo"></p>
+
+                <script>
+                  function myFunction() {
+                    let text = "Press a button!\nEither OK or Cancel.";
+                    if (confirm(text) == true) {
+                      text = "You pressed OK!";
+                    } else {
+                      text = "You canceled!";
+                    }
+                    document.getElementById("demo").innerHTML = text;
+                  }
+                </script>
+              </li>
+            </ul>
+          </form>
+        </div>
+        <!-- END: .modal__content -->
+      </div>
+      <!-- END: .modal__container -->
+    </div>
+    <!-- END: .modal -->
+  </body>
+</html>
